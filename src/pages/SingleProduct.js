@@ -4,14 +4,10 @@ import Meta from "../components/Meta";
 import ProductCard from "../components/ProductCard";
 import ReactStars from "react-rating-stars-component";
 import { useState, useRef } from "react";
-import ReactImageZoom from "react-image-zoom";
 import { TbGitCompare } from "react-icons/tb";
 import { AiOutlineHeart } from "react-icons/ai";
-//import ReactImageMagnify from "react-image-magnify";
 import Color from "../components/Color";
 import Container from "../components/Container";
-import { watch } from "../images/watch.jpg";
-import { Link } from "react-router-dom";
 
 const images = [
   "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg",
@@ -23,12 +19,7 @@ const images = [
 
 
 const SingleProduct = () => {
-  const props = {
-    width: 400,
-    height: 250,
-    zoomWidth: 500,
-    img: "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg",
-  };
+
   const [orderedProduct, setorderedProduct] = useState(true);
   const copyToClipboard = (text) => {
     console.log("text", text);
@@ -48,7 +39,7 @@ const SingleProduct = () => {
           <div className="col-6">
             <div className="main-product-image">
               <div>
-                <ReactImageZoom {...props} />
+            
               </div>
             </div>
             <div className="other-product-images d-flex flex-wrap gap-15">

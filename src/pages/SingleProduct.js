@@ -24,7 +24,7 @@ const images = [
 
 const SingleProduct = () => {
   const props = {
-    width: 400,
+    width: 650,
     height: 500,
     zoomWidth: 500,
     img: "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg",

@@ -7,7 +7,7 @@ import { useState, useRef } from "react";
 import ReactImageZoom from "react-image-zoom";
 import { TbGitCompare } from "react-icons/tb";
 import { AiOutlineHeart } from "react-icons/ai";
-import ReactImageMagnify from "react-image-magnify";
+//import ReactImageMagnify from "react-image-magnify";
 import Color from "../components/Color";
 import Container from "../components/Container";
 import { watch } from "../images/watch.jpg";
@@ -84,24 +84,7 @@ const SingleProduct = () => {
             <div className="col-6">
               <div className="main-product-image">
                 <div>
-                  <ReactImageMagnify
-                    {...{
-                      smallImage: {
-                        alt: "Wristwatch by Ted Baker London",
-                        isFluidWidth: true,
-                        src: "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg",
-                      },
-                      largeImage: {
-                        src: "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg",
-                        width: 800,
-                        height: 600,
-                      },
-                      enlargedImageContainerDimensions: {
-                        width: "130%",
-                        height: "130%",
-                      },
-                    }}
-                  />
+          
                 </div>
               </div>
               <div className="other-product-images d-flex flex-wrap gap-15">

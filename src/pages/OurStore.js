@@ -6,12 +6,15 @@ import Meta from "../components/Meta";
 import Color from "../components/Color";
 import Container from "../components/Container";
 
+
+
 const OurStore = () => {
   const [grid, setGrid] = useState(4);
   return (
-    <>
+<>
       <Meta title={"Our Store"} />
       <BreadCrumb title="Our Store" />
+
       <Container class1="store-wrapper home-wrapper-2 py-5">
           <div className="row">
             <div className="col-3">
@@ -49,7 +52,7 @@ const OurStore = () => {
                         value=""
                         id=""
                       />
-                      <label class="form-check-label" htmlFor="">
+                      <label className="form-check-label" htmlFor="">
                         Out Of Stock(0)
                       </label>
                     </div>
@@ -183,9 +186,10 @@ const OurStore = () => {
                     <p className="mb-0 d-block" style={{ width: "100px" }}>
                       Sort By:{" "}
                     </p>
-                    <select name="" className="form-control form-select" id="">
+                    <select name="" className="form-control form-select" defaultValue={"DEFAULT"} id="">
+                      <option />
                       <option value="manual">Featured</option>
-                      <option value="best-selling" selected="selected">
+                      <option value="best-selling">
                         Best selling
                       </option>
                       <option value="title-ascending">
@@ -256,7 +260,9 @@ const OurStore = () => {
             </div>
           </div>
       </Container>
+
     </>
+
   );
 };
 

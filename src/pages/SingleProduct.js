@@ -10,8 +10,6 @@ import { AiOutlineHeart } from "react-icons/ai";
 //import ReactImageMagnify from "react-image-magnify";
 import Color from "../components/Color";
 import Container from "../components/Container";
-import { watch } from "../images/watch.jpg";
-import { Link } from "react-router-dom";
 
 const images = [
   "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg",
